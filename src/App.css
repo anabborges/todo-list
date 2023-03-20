@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: 100vh;
+  background: #867070;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-list{
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
+  margin: 130px auto;
+  background: #D5B4B4;
+  border-radius: 10px;
+  width: 500px;
+  height: 600px;
+  padding: 25px 10px;
+  gap: 20px;
+  overflow: auto;
+}
+
+.cute-icons{
+  display: flex;
+  gap: 50px;
+}
+
+h1{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 35px;
+}
+
+.form{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.task-input{
+  background: #cab2b2;
+  border-radius: 5px;
+  text-align: center;
+  height: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-button{
+  background: #977e7e;
+  height: 30px;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.add-button:hover{
+  background: #b39999;
+}
+
+.todo-row{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #977e7e;
+  width: 60%;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.todo-row-complete{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #6d8366;
+  width: 60%;
+  border-radius: 5px;
+  gap: 10px;
+  text-decoration: line-through solid black
+}
+
+.todo-row-not-complete{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #bd6d5f;
+  width: 60%;
+  border-radius: 5px;
+  gap: 10px;
 }
